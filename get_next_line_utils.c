@@ -3,19 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
+/*   By: xlourenc <xlourenc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 14:42:38 by xaviermonte       #+#    #+#             */
-/*   Updated: 2024/08/12 14:43:27 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/08/14 15:47:18 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "GET_NEXT_LINE.H"
+#include "get_next_line.h"
 
 //extra functions.
 //STRJOIN - JOINING THE BUFFER TO THE GLOBAL VARIABLE.
 //STRCHR - USED TO SEARCH TRUE THE STRING FOR A "\n" and give use a flag 0 or 1. 
+int ft_strlen(char *str)
+{
+	int i;
 
+	i = 0;
+	while(str[i])
+	{
+		i++;
+	}
+	return i;
+}
 static char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;

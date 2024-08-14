@@ -6,13 +6,13 @@
 /*   By: xlourenc <xlourenc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/09 12:23:06 by xaviermonte       #+#    #+#             */
-/*   Updated: 2024/08/14 15:00:43 by xlourenc         ###   ########.fr       */
+/*   Updated: 2024/08/14 15:43:34 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "GET_NEXT_LINE.H"
+#include "get_next_line.h"
 
-static int  grab_rest(char *buffer)
+static char *grab_rest(char *buffer)
 {
         char *temp;
         int i;
@@ -34,7 +34,7 @@ static int  grab_rest(char *buffer)
         return(temp);
         
 }
-static grab_line( char *buffer)
+static char *grab_line( char *buffer)
 {
         char *temp;
         int i;
