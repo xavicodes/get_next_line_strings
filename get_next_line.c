@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xaviermonteiro <xaviermonteiro@student.    +#+  +:+       +#+        */
+/*   By: xlourenc <xlourenc@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/09 12:23:06 by xaviermonte       #+#    #+#             */
-/*   Updated: 2024/08/14 13:08:48 by xaviermonte      ###   ########.fr       */
+/*   Updated: 2024/08/14 15:00:43 by xlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "GET_NEXT_LINE.H"
 
-static grab_rest(char *buffer)
+static int  grab_rest(char *buffer)
 {
         char *temp;
         int i;
